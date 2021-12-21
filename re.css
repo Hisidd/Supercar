@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center .star{
+    margin-left: 150px;
+    height: 125px;
+    width: 500px;
+    border: 5px solid black;
+    text-align: center;
+    margin-top: 500px;
+}
+.star input{
+    display: none;
+}
+.star label{
+    font-size: 100px;
+    color: lightgray;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+}
+.star label:before{
+    content: "★";
+}
+.star input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.star input:checked > label:hover, .star input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+.star .result:before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateY(50%);
+    bottom: -30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: gold;
+    font-family: 'poppins', sans-serif;
+    display: none;
+}
+.star input:checked ~ .result:before{
+    display: block;
+}
+.star #five:checked ~ .result:before{
+    content: "I Love it 😍 ";
+}
+.star #four:checked ~ .result:before{
+    content: "I Like it 😎 ";
+}
+.star #three:checked ~ .result:before{
+    content: "It`s Good 😄 ";
+}
+.star #two:checked ~ .result:before{
+    content: "I don`t like it 😒 ";
+}
+.star #one:checked ~ .result:before{
+    content: "I hate it 😠";
+}
