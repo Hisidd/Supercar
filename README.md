@@ -1,4 +1,4 @@
-<H1>Everone`s Dream Car.</h1>
+<H1>Everyone`s Dream Car.</h1>
 <hr>
 <p>Presenting before you Aston Martin cars from United Kingdom.<p>
 <hr>
